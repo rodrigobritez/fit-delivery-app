@@ -1,0 +1,31 @@
+.input{
+    width: 100%;
+    outline: 0;
+    border: none;
+    border: solid 2px #CACACA;
+    border-radius: 5px;
+    padding: 15px 5px 15px 15px;
+    box-sizing: border-box;  
+    cursor: pointer;
+    font-family: "Barlow", "sans-serif";
+    font-weight: 400;
+    &:focus{
+        border: solid 2px #000;
+        font-weight: bold;
+    }
+}
+
+.input-password-container{
+    position: relative;
+    span{
+        position: absolute;
+        cursor: pointer;
+        color: #CACACA;
+        right: 15px;
+        user-select: none;
+        top: calc(50% - 12px);
+        &:hover{
+            color: #000;
+        }
+    }
+}
